@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 // parse application/json
 app.use(bodyParser.json());
+app.use(express.static('public'))
 /** Twilio */
 const accountSid = 'AC6a4b1043ffbc5bdd1efd4cdf559a7432';
 const authToken = '542338552897b7b9816bfa4700573d84';
